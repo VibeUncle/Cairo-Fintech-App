@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@200;300;500&family=EB+Garamond:wght@400;500;600;700;800&family=Montserrat:wght@100;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="dashboard.css">
+        <script defer src="dashboard.js"></script>
+        <script src="https://kit.fontawesome.com/71f6d42350.js" crossorigin="anonymous"></script>
+        <title>Cairo Dashboard</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <!-- ---------dashboard header----------------- -->
+            <div class="cont-head">
+
+                <!--------first section of the head div---------- -->
+                <div class="head-sect1">
+                    <img src="/images/dashboard-img.png">
+                    <div class="head-subsect1">
+                        <h3>Hello, Fuad</h3>
+                        <section>
+                            <img src="/images/dashboard-teir 2-medal.png">
+                            <p>Tier 2</p>
+                        </section>
+                    </div>
+                </div>
+
+                <div class="head-sect2">
+                    <section class="imgSect">
+                        <a href="dashboard.html">
+                            <img src="/images/customer.png">
+                        </a>
+                        
+                    </section>
+
+                    <section class="imgSect">
+                        <a href="dashboard.html">
+                            <img src="/images/barcode-read.png">
+                        </a>
+                    </section>
+
+                    <section class="imgSect">
+                        <a href="Notification/notification.html">
+                            <img src="/images/notification.png">
+                        </a>
+                    </section>
+                </div>
+            </div>
+
+            <!-- ---------dashboard first middle section------------------->
+            <div class="cont-mid1">
+                <div class="cont-mid1-sect1">
+                    <section>
+                        <p>Total Balance</p>
+                        <i class="fa-regular fa-eye-slash" onclick="showAmount()" id="eye-icon"></i>
+                    </section>
+                    
+                    <h2 id="account-balance">₦870,000.00</h2>
+                </div>
+                
+                <div class="cont-mid1-sect2">
+                    <section>
+                        <a href="#"><i class="fa-solid fa-plus"></i></a>
+                        <p>Deposit</p>
+                    </section>
+                    
+                    <section>
+                        <a href="transfer/transfer.html"><i class="fa-solid fa-money-bill-transfer"></i></a>
+                        <p>Tranfer</p>
+                    </section>
+                    
+                    <section>
+                        <a href="#"><i class="fa-solid fa-wallet"></i></a>
+                        <p>Save</p>
+                    </section>
+                    
+                    <section>
+                        <a href="#"><i class="fa-solid fa-toilet-paper fa-flip-horizontal"></i></a>
+                        <p>Borrow</p>
+                    </section>
+                </div>
+            </div>
+
+            <!-- ---------dashboard second middle section------------------->
+            <div class="cont-mid2">
+                <h3>Bills</h3><span>New features</span>
+                <div class="cont-mid2-sect1">
+                    <section>
+                        <i class="fa-solid fa-bolt"></i>
+                        <p>Electricity</p>
+                    </section>
+                    
+                    <section>
+                        <i class="fa-solid fa-sim-card"></i>
+                        <p>Airtime</p>
+                    </section>
+                    
+                    <section>
+                        <i class="fa-solid fa-chart-simple"></i>
+                        <p>Data</p>
+                    </section>
+                    
+                    <section>
+                        <i class="fa-solid fa-tv"></i>
+                        <p>Tv</p>
+                    </section>
+                    
+                    <section>
+                        <i class="fa-solid fa-globe"></i>
+                        <p>Internet</p>
+                    </section>
+                    
+                    <section>
+                        <i class="fa-solid fa-arrow-right"></i>
+                        <p>More</p>
+                    </section>
+                </div>
+            </div>
+            
+            <!-- ---------dashboard third middle section------------------->
+            <div class="cont-mid3">
+                <div class="cont-mid3-sect1">
+                    <h3>Recent Transations</h3>
+                    <p>See all</p>
+                </div>
+
+                <div class="cont-mid3-sect2">
+                    <div class="cont-mid3-sect2-part1">
+                        <div class="bank-img">
+                            <img src="/images/GTbank.png">
+                        </div>
+
+                        <section>
+                            <span>
+                                <h4>Bukola Ventures</h4>
+                                <p>2:20 PM</p>
+                            </span>
+                        </section>
+
+                        <p>+₦50,000</p>
+                    </div>
+
+                    <div class="cont-mid3-sect2-part2">
+                        <div class="bank-img2">
+                            <img src="/images/DSTV.png">
+                        </div>
+
+                        <section>
+                            <span>
+                                <h4>DSTv Subscription</h4>
+                                <p>3:10 PM</p>
+                            </span>
+                        </section>
+
+                        <p>-₦5,000</p>
+                    </div>
+
+                    <div class="cont-mid3-sect2-part3">
+                        <div class="bank-img3">
+                            <img src="/images/airtel.png">
+                        </div>
+
+                        <section>
+                            <span>
+                                <h4>Airtel Ng Vtu 2349056871226</h4>
+                                <p>3:44 PM</p>
+                            </span>
+                        </section>
+
+                        <p>-₦10,000</p>
+                    </div>
+
+                    <div class="cont-mid3-sect2-part4">
+                        <div class="bank-img4">
+                            <img src="/images/Glo_Limited.png">
+                        </div>
+
+                        <section>
+                            <span>
+                                <h4>Glo Ng Vtu 2348082321564</h4>
+                                <p>3:50 PM</p>
+                            </span>
+                        </section>
+
+                        <p>-₦3,500</p>
+                    </div>
+
+                    <div class="cont-mid3-sect2-part5">
+                        <div class="bank-img5">
+                            <img src="/images/netflix.png">
+                        </div>
+
+                        <section>
+                            <span>
+                                <h4>Netflix Subscription</h4>
+                                <p>5:10 PM</p>
+                            </span>
+                        </section>
+
+                        <p>-₦2,500</p>
+                    </div>
+
+                    <div class="cont-mid3-sect2-part1">
+                        <div class="bank-img">
+                            <img src="/images/GTbank.png">
+                        </div>
+
+                        <section>
+                            <span>
+                                <h4>Akintola Ltd.Inc</h4>
+                                <p>8:23 PM</p>
+                            </span>
+                        </section>
+
+                        <p>+₦150,000</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ---------dashboard foot section-------------------------->
+            <div class="cont-foot">
+                <div class="cont-foot-sect1">
+                    <a href="dashboard.html"><i class="fa-solid fa-house"></i></a>
+                    <a href="dashboard.html"><p>Home</p></a>
+                </div>
+                
+                <div class="cont-foot-sect2">
+                    <a href="transfer/transfer.html"><i class="fa-solid fa-paper-plane"></i></a>
+                    <a href="transfer/transfer.html"><p>Pay</p></a>
+                </div>
+                
+                <div class="cont-foot-sect2">
+                    <a href="dashboard.html"><i class="fa-solid fa-chart-simple"></i></a>
+                    <a href="dashboard.html"><p>Invest</p></a>
+                </div>
+                
+                <div class="cont-foot-sect2"> 
+                    <a href="dashboard.html"><i class="fa-solid fa-wallet"></i></a>
+                    <a href="dashboard.html"><p>Save</p></a>
+                </div>
+
+                <div class="cont-foot-sect2">
+                    <a href="More/more.html"><i class="fa-solid fa-ellipsis"></i></a>
+                    <a href="More/more.html"><p>More</p></a>
+                </div>
+            </div>
+
+        </div>
+    </body>
+</html>

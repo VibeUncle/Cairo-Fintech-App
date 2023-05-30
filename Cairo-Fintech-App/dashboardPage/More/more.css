@@ -1,0 +1,87 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+@media (min-width: 500px) {
+    body{
+        display: none;
+    }
+}
+@keyframes slideIn{
+    0%{
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0px);
+        opacity: 1;
+    }
+}
+body{
+    overflow-x: hidden;
+    animation: slideIn 2s;
+}
+.container{
+    padding: 15px;
+}
+.container a .fa-solid{
+    font-size: 20px;
+    color: #0F53B9;
+}
+/* --------head section styling---------- */
+.cont-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.head-sect1{
+    display: flex;
+}
+.head-sect1 img{
+    width: 40px;
+    height: 40px;
+    margin-right: 7px;
+}
+.head-subsect1 h3{
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 12px;
+    margin-bottom: 4px;
+}
+.head-subsect1 section{
+    display: flex;
+    align-items: center;
+}
+.head-subsect1 section img{
+    margin-right: 0;
+    width: 25px;
+    height: 25px;
+    z-index: 2;
+}
+.head-subsect1 section p{
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 15px;
+    color: #04026D;
+    background: #C5D5EE;
+    border-radius: 0px 5px 5px 0px;
+    padding: 0px 4px;
+    margin-left: -4px;
+}
+.fa-gear{
+    font-size: 18px;
+    margin-right: 20px;
+}
+.cont-body{
+    height: 80vh;
+    overflow-Y: auto;
+}
+.cont-body img{
+    width: 400px;
+    margin-bottom: -50px;
+    margin-left: -18px;
+}

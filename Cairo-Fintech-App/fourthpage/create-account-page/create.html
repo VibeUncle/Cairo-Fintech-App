@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@200;300;500&family=EB+Garamond:wght@400;500;600;700;800&family=Montserrat:wght@100;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="create.css">
+        <script defer src="create.js"></script>
+        <script src="https://kit.fontawesome.com/71f6d42350.js" crossorigin="anonymous"></script>
+        <title>Cairo - Create an Account</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="cont-head">
+                <h1>Create an Account</h1>
+            </div>
+
+            <div class="cont-mid">
+                <div class="firstname-sect">
+                    <p id="name-error">validate</p>
+                    <input type="text" id="first-name" placeholder="First name" onkeyup="validateFirstname()" spellcheck="false">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+
+                <div class="surname-sect">
+                    <p id="surname-error">validate</p>
+                    <input type="text" id="surname-input" placeholder="Surname" onkeyup="validateSurname()" spellcheck="false">
+                    <i class="fa-solid fa-user-plus"></i>
+                </div>
+
+                <div class="email-input">
+                    <p id="email-error">validate</p>
+                    <input type="email" id="email-input" placeholder="Email address" onkeyup="validateEmail()" spellcheck="false">
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+
+                <div class="password-input">
+                    <p id="password-error">validate</p>
+                    <input type="password" id="password-input" placeholder="Password" onkeyup="validatePassword()">
+                    <i class="fa-solid fa-eye" onclick="showPassword()" id="eye-icon"></i>
+                </div>
+                <div class="confirm-input">
+                    <p id="confirm-error">validate</p>
+                    <input type="password" id="confirm-input" placeholder="Confirm password" onkeyup="validateConfirm()">
+                    <i class="fa-solid fa-eye" onclick="showConfirm()" id="eyeIcon"></i>
+                </div>
+
+            </div>
+
+            <div class="cont-foot">
+                <button onclick="validateForm()">Sign up</button>
+                <p>Have an account?, <a href="/fourthpage/login.html">Sign in</a></p>
+            </div>
+
+        </div>
+    </body>
+</html>

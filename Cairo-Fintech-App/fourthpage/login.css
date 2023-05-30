@@ -1,0 +1,137 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+@media (min-width: 500px) {
+    body{
+        display: none;
+    }
+}
+@keyframes slideIn{
+    0%{
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0px);
+        opacity: 1;
+    }
+}
+body{
+    overflow-x: hidden;
+    animation: slideIn 2s;
+}
+.cont-head{
+    margin: 48px auto 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.cont-head h1{
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 37.5px;
+    text-align: center;
+    margin-bottom: 24px;
+    color: #2A2B2B;
+}
+.cont-head img{
+    width: 207px;
+}
+.cont-mid{
+    margin: 40px auto 0;
+    padding: 10px 20px;
+}
+.cont-mid div:last-of-type{
+    margin-top: 20px;
+}
+.cont-mid p{
+    color: #ec0000;
+    margin-left: 20px;
+    margin-bottom: 2px;
+    display: none;
+} 
+.cont-mid input{
+    width: 100%;
+    height: 46px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #4E4F4F;
+    border: 1px solid #4E4F4F;
+    border-radius: 30px;
+    padding: 20px 40px 20px 20px;
+    outline-color: #3870C5;
+    transition: all .4s;
+}
+.cont-mid input:hover{
+    box-shadow: 0px 0px 10px #3870C5;
+}
+.fa-solid{
+    color: #3870C5;
+    position: absolute;
+    font-size: 17px;
+    margin: 16px -35px;
+}
+.cont-mid1{
+    margin: 20px auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    padding: 20px;
+
+}
+.cont-mid1 div{
+    display: flex;
+    align-items: center;
+}
+.cont-mid1 input{
+    margin-top: -4px;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #2A2B2B;
+    margin-right: 3px;
+}
+.cont-mid1 p a{
+    color: #ec0000;
+    text-decoration: none;
+}
+.cont-foot{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    padding: 20px;
+}
+.cont-foot button{
+    width: 100%;
+    height: 46px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #4E4F4F;
+    border: none;
+    border-radius: 30px;
+    transition: all .5s;
+    color: #fff;
+    background: #3870C5;
+}
+.cont-foot button:hover{
+    box-shadow: 0px 0px 10px #3870C5;
+    scale: 1.02;
+}
+.cont-foot a{
+    color: #3870C5;
+    font-weight: 700;
+    text-decoration: none;
+}

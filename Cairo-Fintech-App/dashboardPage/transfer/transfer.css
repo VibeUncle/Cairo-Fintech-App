@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+@media (min-width: 500px) {
+    body{
+        display: none;
+    }
+}
+@keyframes slideIn{
+    0%{
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0px);
+        opacity: 1;
+    }
+}
+body{
+    overflow-x: hidden;
+    animation: slideIn 2s;
+}
+.container{
+    padding: 15px;
+}
+.container a .fa-solid{
+    font-size: 20px;
+    color: #0F53B9;
+}
+.cont-head1-sect1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 29px;
+    margin-bottom: 30px;
+}
+.cont-head1-sect1 h3{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
+}
+.cont-head1-sect1 p a{
+    font-size: 15px;
+    font-weight: 500;
+    color: #0F53B9;
+    line-height: 21px;
+    text-decoration: none;
+}
+.cont-head1-sect2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 90px;
+}
+.cont-head1-sect2 section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cont-head1-sect2 section .fa-regular{
+    font-size: 26px;
+    color: white;
+    background-color: #F6521F;
+    padding: 15px 18px;
+    border-radius: 60px;
+    margin-bottom: 10px;
+}
+#second-icon{
+    background-color: #22B7A0;
+}
+#third-icon{
+    background-color: #B4B722;
+}
+#fourth-icon{
+    background-color: #B72296;
+}
+.cont-head1-sect2 section p{
+    font-size: 12px;
+    text-align: center;
+    font-weight: 400;
+    line-height: 12px;
+}
+
+.cont-body-sect1 a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px; 
+    text-decoration: none;
+    background-color: #E7EEF8;
+    padding: 20px 15px;
+    border: 2px dashed #A8A8A8;
+    border-radius: 10px;
+}
+.cont-body-sect1 img{
+    width: 50px;
+}
+.cont-body-sect1 a .fa-building-columns{
+    font-size: 50px;
+    color: #346ECD;
+}
+.cont-body-sect1 .fa-angle-right{
+    color: #346ECD;
+    font-size: 17px;
+}
+.cont-body-sect1 section h3{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #4e4f4f;
+    margin-bottom: 5px;
+}
+.cont-body-sect1 section p{
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 21px;
+    color: #4e4f4f;
+    margin-bottom: 5px;
+}
+
+
+
